@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+:root{
+    --header-height: 2rem;
+
+
+/*Colors*/
+--first-color: #D4D4DC;
+--button-color: #ff8f00;
+--title-color: #A2AABB;
+--paragraph-color: #A2AABB;
+
+--body-font: 'Andika New Basic', sans-serif;
+--biggest-font-size: 3rem;
+--h1-font-size: 2.25rem;
+--p-font-size: 1.55rem;
+
+--mb-1: .5rem;
+--mb-2: 1rem;
+--mb-3: 1.5rem;
+--mb-4: 2rem;
+--mb-5: 2.5rem;
+--mb-6: 3rem;
+--mr-4: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:var(--body-font);
+    
+}
+header{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/option1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float:right;
+    list-style-type:none;
+}
+
+ul li {
+    display: inline-block;
+    margin-top: var(--mb-6);
+    margin-right: var(--mr-4);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--first-color);
+    padding: 5px 20px;
+    font-size: 1.7rem;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color:#ff8f00;
+}
+
+.nav-button{
+    background-color: var(--button-color);
+    color:var(--first-color);
+    font-size: 15px;
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+.nav-button:hover{
+    opacity:0.9;
+    transition: 0.5 ease-in;
+}
+.button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 0.9;
+    transition: 0s
+  }
+
+.big-heading{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.big-heading h1{
+    color: var(--first-color);
+    font-size: 70px;
+}
+
+.p-heading{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.p-heading p{
+    color: var(--first-color);
+    font-size: 15px;
+}
+
+.search-input{
+    width: 500px;
+    height: 5rem;
+}
+
+.search{
+    position: absolute;
+    top: 60%;
+    left: 28%;
+    margin-top: 3rem;
+}
+
+.btn{
+    width: 9rem;
+    height: 5rem;
+    position:absolute;
+    
+}
+
